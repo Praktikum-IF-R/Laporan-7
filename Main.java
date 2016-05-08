@@ -5,14 +5,14 @@ public class Main {
         Scanner in = new Scanner (System.in);
         Premium person1 = new Premium(); Gold person2 = new Gold();
         Silver person3 = new Silver(); Non person4 = new Non();
-        Random ran = new Random();
-        int x = ran.nextInt(41);
         String p = "Premium"; String q = "Gold"; String r = "Silver"; String s = "Non";
         boolean status = true;
         System.out.println(">>>>>>>>>>>||Salon Kecantikan Ayla||<<<<<<<<<<<");
         System.out.println("ID anda?\nPremium, Gold, Silver?\nNon untuk bukan anggota.");
-        System.out.print("Masukkan ID anda: ");
+        System.out.print("Jenis ID anda: ");
         String a = in.next();
+        System.out.print("Today Special Discount: ");
+        int x = in.nextInt();
         while(status){
         System.out.println("################################################");
         System.out.println("Today Special Discount: "+x+"%");
@@ -35,31 +35,31 @@ public class Main {
                             person4.displayInfo(x);}
                         break;
             case 11 :   if(a.equalsIgnoreCase(p)){
-                            person1.countPayment(x, 13000);}
+                            person1.countPayment(13000);}
                         else if(a.equalsIgnoreCase(q)){
-                            person2.countPayment(x, 13000);}
+                            person2.countPayment(13000);}
                         else if(a.equalsIgnoreCase(r)){
-                            person3.countPayment(x, 13000);}
+                            person3.countPayment(13000);}
                         else if(a.equalsIgnoreCase(s)){
-                            person4.countPayment(x, 13000);}
+                            person4.countPayment(13000);}
                         break;
             case 12 :   if(a.equalsIgnoreCase(p)){
-                            person1.countPayment(x, 21000);}
+                            person1.countPayment(21000);}
                         else if(a.equalsIgnoreCase(q)){
-                            person2.countPayment(x, 21000);}
+                            person2.countPayment(21000);}
                         else if(a.equalsIgnoreCase(r)){
-                            person3.countPayment(x, 21000);}
+                            person3.countPayment(21000);}
                         else if(a.equalsIgnoreCase(s)){
-                            person4.countPayment(x, 21000);}
+                            person4.countPayment(21000);}
                         break;
             case 21 :   if(a.equalsIgnoreCase(p)){
-                            person1.countPayment(x, 20000);}
+                            person1.countPayment(x,20000);}
                         else if(a.equalsIgnoreCase(q)){
                             person2.countPayment(x, 20000);}
                         else if(a.equalsIgnoreCase(r)){
                             person3.countPayment(x, 20000);}
                         else if(a.equalsIgnoreCase(s)){
-                            person4.countPayment(x, 20000);}
+                            person4.countPayment(20000);}
                         break;
             case 22 :   if(a.equalsIgnoreCase(p)){
                             person1.countPayment(x, 32000);}
@@ -68,7 +68,7 @@ public class Main {
                         else if(a.equalsIgnoreCase(r)){
                             person3.countPayment(x, 32000);}
                         else if(a.equalsIgnoreCase(s)){
-                            person4.countPayment(x, 32000);}
+                            person4.countPayment(32000);}
                         break;
             default :   System.out.println("Pilihan Tdk Ditemukan...");
         }
