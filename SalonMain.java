@@ -194,7 +194,7 @@ public class SalonMain {
             if(pil==3){
                 do{
                 System.out.println("    SILVER MEMBER(10%)  ");
-                System.out.println("--------------------"----);
+                System.out.println("--------------------");
                 System.out.println("DAFTAR FASILITAS");
                 System.out.println("1.Produk");
                 System.out.println("2.Jasa");
