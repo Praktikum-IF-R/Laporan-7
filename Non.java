@@ -13,7 +13,6 @@ public class Non extends Produk{
     public void getHarga(double harga){
     System.out.println("Keanggotaan : Non Member");
     System.out.println("Tagihan     : Rp." + harga);
-    System.out.println("Bonus 20%   : Rp." + harga);
     System.out.println("Total harga : Rp." + harga);
 }
 }
