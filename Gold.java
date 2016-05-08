@@ -13,7 +13,7 @@ public class Gold extends Produk {
     public void getHarga(double harga){
     System.out.println("Keanggotaan : Gold");
     System.out.println("Tagihan     : Rp." + harga);
-    System.out.println("Bonus 20%   : Rp." + (harga*0.15));
+    System.out.println("Bonus 15%   : Rp." + (harga*0.15));
     System.out.println("Total harga : Rp." + (harga-(harga*0.15)));
 }
 }
