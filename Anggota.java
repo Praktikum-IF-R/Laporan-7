@@ -34,8 +34,7 @@ public abstract class Anggota {
       Total = totalProduk;
     }
     public double getTotal() {
-        Total = Total - this.getDiskonAnggota();
-        return Total;
+        return Total = Total - this.getDiskonAnggota();
     }
     public double Total() {
         return Total = Total - this.getDiskon()-this.getDiskonAnggota();
